@@ -1,6 +1,6 @@
 # exchange-delta-service
 
-[![Java CI with Maven](https://github.com/wexom/exchange-delta-service/actions/workflows/maven.yml/badge.svg?branch=main)](https://github.com/wexom/exchange-delta-service/actions/workflows/maven.yml)
+[![maven-build](https://github.com/wexom/exchange-delta-service/actions/workflows/maven-build/badge.svg?branch=main)](https://github.com/wexom/exchange-delta-service/actions/workflows/maven-build/badge.svg?branch=main)
 
 The task from Bank ID for position interview.
 
