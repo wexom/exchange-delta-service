@@ -15,3 +15,9 @@ Create a Spring Boot application (using Kotlin or optionally Java) with the foll
 - **Health Check Endpoint**: The service should provide a health check endpoint.
 - **Security**: Secure the service using either Basic Authentication or OAuth (using Google as the OAuth server if applicable).
 
+### What could be improved:
+- **Error Handling**: The application should handle errors gracefully and return appropriate HTTP status codes, for example for client responses
+- **Logging**: The application should log important events and errors
+- **Testing**: The application should have more unit tests and integration tests
+- **Cache**: The application should cache the exchange rate data
+- **Dynamic provider loading**: The application should allow for dynamic loading of exchange rate providers
