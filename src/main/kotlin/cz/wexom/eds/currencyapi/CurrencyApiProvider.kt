@@ -10,7 +10,7 @@ class CurrencyApiProvider(private val currencyApiClient: CurrencyApiClient) {
     suspend fun getExchangePairs(): Set<ExchangePair> {
         return parseCurrencyApiResponse(currencyApiClient.getTodayExchangeRates()).keys.flatMap {
             setOf(
-                ExchangePair(it, "CZK"),
+                ExchangePair(it.uppercase(), "CZK"),
                 ExchangePair("CZK", it.uppercase())
             )
         }.toSet()

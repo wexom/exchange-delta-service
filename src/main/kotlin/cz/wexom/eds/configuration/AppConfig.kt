@@ -1,11 +1,13 @@
 package cz.wexom.eds.configuration
 
-import cz.wexom.eds.api.ReactiveExceptionHandler
 import cz.wexom.eds.cnb.CNBClient
+import cz.wexom.eds.configuration.properties.AppProperties
 import cz.wexom.eds.currencyapi.CurrencyApiClient
 import cz.wexom.eds.exception.ProviderNotFoundException
+import cz.wexom.eds.handler.ReactiveExceptionHandler
 import cz.wexom.eds.health.ExtendedHealthIndicator
 import org.springframework.boot.autoconfigure.web.WebProperties
+import org.springframework.boot.context.properties.EnableConfigurationProperties
 import org.springframework.boot.web.reactive.error.DefaultErrorAttributes
 import org.springframework.context.ApplicationContext
 import org.springframework.context.annotation.Bean
@@ -15,6 +17,7 @@ import org.springframework.http.HttpStatus
 import org.springframework.http.codec.ServerCodecConfigurer
 
 @Configuration
+@EnableConfigurationProperties(AppProperties::class)
 class AppConfig {
 
     @Bean

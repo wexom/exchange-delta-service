@@ -1,4 +1,4 @@
-package cz.wexom.eds.api
+package cz.wexom.eds.handler
 
 import cz.wexom.eds.domain.ResponseWrapper
 import org.springframework.boot.autoconfigure.web.WebProperties

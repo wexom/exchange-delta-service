@@ -39,8 +39,8 @@ class ExchangeRateService(
 
         return ExchangeRateDelta(
             delta = abs(cnbProvider.getExchangeRate(from, to) - currencyApiProvider.getExchangeRate(from, to)),
-            best = exchangeRateProviders.minBy { it.exchangeRate }.provider,
-            worst = exchangeRateProviders.maxBy { it.exchangeRate }.provider,
+            best = exchangeRateProviders.maxBy { it.exchangeRate }.provider,
+            worst = exchangeRateProviders.minBy { it.exchangeRate }.provider,
             data = exchangeRateProviders,
         )
     }
